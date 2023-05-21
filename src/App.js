@@ -4,22 +4,21 @@ class App extends Component{
   constructor(){
     super();
     this.state={
-      name:" "
+      userName:" "
     }
   }
   onClickEvent(){
     window.open("https://www.bridgelabz.com",'_blank')
   }
   onInputChange=(event)=>{
-    this.setState({name:event.target.value});
+    this.setState({userName:event.target.value});
   }
   render(){
     console.log("Render Method");
     return (<div>
-              <h1>Hello World {this.state.name}</h1>
+              <h1>Hello from bridgelabz {this.state.userName}</h1>
               <input type="text" onChange={this.onInputChange}/>
               <img src={logo} alt=""onClick={this.onClickEvent}/>
-
     </div>)
   };
 
